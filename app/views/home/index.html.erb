@@ -5,8 +5,10 @@
       <a href="<%= photo.image %>"><%= image_tag photo.image_url if photo.image? %></a>
       <div class="actions">
 		  <ul>
+            <li>Album: <%= photo.album.name%> </li>
 		  	<li>User: <%= photo.users_first_name.to_s + ' ' + photo.users_last_name.to_s %></li>
-			<li> Created on : <%= photo.created_at.strftime("%d-%m-%Y") %>			
+			<li> Created on : <%= photo.created_at.strftime("%d-%m-%Y") %>
+            </ul>			
       </div>
     </div>
   <% end %>
