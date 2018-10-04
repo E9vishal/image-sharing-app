@@ -20,7 +20,7 @@
         <td><%= current_user.first_name.to_s + ' ' + current_user.last_name.to_s %></td>
         <td><%= album.created_at.strftime("%d-%m-%Y") %></td>
         <td>
-  <% if user_signed_in? and current_user.email == current_user.email %>
+  <% if user_signed_in? and current_user.email? %>
 	  	  <%= link_to t('.show', :default => t("helpers.links.show")),
 		  	  		  album_path(album), :class => 'btn btn-mini' %>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
