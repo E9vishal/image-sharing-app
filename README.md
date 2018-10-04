@@ -12,9 +12,12 @@ step 2. To create rails app run the following command
 
 Step 3. add gem  in Gemfile 
 - 'devise' - authentication
-- 'rmagick'
 - 'carrierwave' - image uploads
-- 'twitter-bootstrap-rails' - twitter bootstrap UI
+- 'rmagick'
+
+- 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'  - twitter bootstrap UI
+- "therubyracer"
+- "less-rails"
 
 Step 4. To install all the dependencies Run.
 - bundle install
